@@ -1,9 +1,8 @@
 package service;
 
 import java.util.HashMap;
-import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Scanner;
 
 import dao.MemberDAO;
@@ -11,7 +10,6 @@ import dao.MemberDAO;
 public class MemberService {
 	// 싱글톤
 	
-	// 회원 모두 조회(searchAll)
 	// 회원 삭제(delete)
 	private static MemberService instance = null;
 	
@@ -140,16 +138,17 @@ public class MemberService {
 			} else {
 				break;
 			}
-		}
-			
+		}		
 			row = dao.searchOne(id);
-			
 			System.out.println("MID\tMNAME\t   TEL_NO\tMILEAGE\t\tPASSWD");
-			
-
 			System.out.println(row.get("MID")+"\t"+row.get("MNAME")+"\t"+row.get("TEL_NO")+"\t"+row.get("MILEAGE")+"\t"+row.get("PASSWD"));
-		
-		
+	}
+	
+	// 회원 모두 조회(searchAll)
+	public void searchAll() {
+		List<Map<String, Object>> list = null;
+		System.out.println("\t회원정보조회");
+		System.out.println("회원 정보를 모두 불러옵니다.");
 		
 	}
 
