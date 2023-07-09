@@ -48,10 +48,17 @@ public class _02_Interface {
 		
 		speedCam.detect();
 		speedCam.report();
+		System.out.println("-------------------------------------");
+
+		Detectable speed = new SpeedCam();
 		
-		
-		
-		
-		
+		if (speed instanceof SpeedCam) {
+			SpeedCam s = (SpeedCam)speed;
+			s.setDetector(advancedFireDetector);
+			s.setReporter(videoReporter);
+			s.detect();
+			s.report();
+		}				
+				
 	}
 }

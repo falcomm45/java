@@ -21,7 +21,7 @@ public class Controller {
 		MemberService memberService = MemberService.getInstance();
 //		memberService.signUp();
 		memberService.update();
-//		memberService.searchOne();
+		memberService.searchOne();
 		
 		
 	}

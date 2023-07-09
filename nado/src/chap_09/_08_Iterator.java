@@ -7,7 +7,6 @@ import java.util.Iterator;
 // import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 
 public class _08_Iterator {
 	public static void main(String[] args) {
@@ -93,13 +92,6 @@ public class _08_Iterator {
 		Iterator<Map.Entry<String, Integer>> itMap = map.entrySet().iterator();
 		while(itMap.hasNext()) {
 			System.out.println(itMap.next());
-			
-			
-			Map.Entry<String, Integer> map2 = itMap.next();
-			String key = map2.getKey();
-			int value = map2.getValue();
-			System.out.println(key + "´ÔÀÇ Æ÷ÀÎÆ® : " + value);
-			
 		}
 		System.out.println("--------------------");
 		

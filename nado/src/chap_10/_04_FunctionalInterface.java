@@ -11,7 +11,6 @@ public class _04_FunctionalInterface {
 		KRWConverter converter = new KRWConverter();
 		// converter.convert(2);
 		
-		// convertUSD(converter,USD);
 		// convertUSD((USD) -> System.out.println(USD + "달러 = " + (USD * 1400) + "원"), 12);
 		
 		// 함수형 인터페이스
@@ -42,7 +41,7 @@ public class _04_FunctionalInterface {
 		// 반환값이 있는 경우?
 		ConvertibleWithReturn c3 = (d, w) -> d*w;
 		int result = c3.convert(27, 1400);
-		System.out.println("27달러 : " + result + "원");
+		System.out.println("20달러 : " + result + "원");
 		
 	}
 	

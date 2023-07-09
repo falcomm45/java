@@ -1,7 +1,7 @@
 package chap_09;
 
 import java.util.HashMap;
-// import java.util.LinkedHashMap;
+import java.util.LinkedHashMap;
 
 public class _07_HashMap {
 	public static void main(String[] args) {
@@ -82,7 +82,7 @@ public class _07_HashMap {
 		System.out.println("--------------------");
 		
 		// HashSet 과 마찬가지로 순서를 보장하기 위해서는 Linked 사용
-		// HashMap<String, Integer> map2 = new LinkedHashMap<String, Integer>();
+		HashMap<String, Integer> map2 = new LinkedHashMap<String, Integer>();
 		
 
 	}	
