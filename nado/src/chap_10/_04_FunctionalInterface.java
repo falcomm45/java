@@ -10,8 +10,8 @@ public class _04_FunctionalInterface {
 	public static void main(String[] args) {
 		KRWConverter converter = new KRWConverter();
 		// converter.convert(2);
-		
-		// convertUSD((USD) -> System.out.println(USD + "달러 = " + (USD * 1400) + "원"), 12);
+		// convertUSD(converter, 2);
+		// ==> convertUSD((USD) -> System.out.println(USD + "달러 = " + (USD * 1400) + "원"), 12);		
 		
 		// 함수형 인터페이스
 		Convertible convertible = (USD) -> System.out.println(USD + "달러 = " + (USD * 1400) + "원");
@@ -24,7 +24,7 @@ public class _04_FunctionalInterface {
 		
 		// 전달값이 하나도 없다면?
 		ConvertibleWithNoParams c1 = () -> System.out.println("1달러 : 1400원");
-		c1.converter();
+		c1.convert();
 		
 		// 두 줄 이상의 코드가 있다면?
 		c1 = () -> {
@@ -32,7 +32,7 @@ public class _04_FunctionalInterface {
 			int KRW = 1400;
 			System.out.println(USD + "달러 : " + (USD * KRW) + "원");
 		};
-		c1.converter();
+		c1.convert();
 		
 		// 전달값이 2개인 경우?
 		ConvertibleWithTwoParams c2 = (d, w) -> System.out.println(d + "달러 : " + (d * w) + "원");
@@ -41,7 +41,7 @@ public class _04_FunctionalInterface {
 		// 반환값이 있는 경우?
 		ConvertibleWithReturn c3 = (d, w) -> d*w;
 		int result = c3.convert(27, 1400);
-		System.out.println("20달러 : " + result + "원");
+		System.out.println("27달러 : " + result + "원");
 		
 	}
 	
