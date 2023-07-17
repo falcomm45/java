@@ -125,20 +125,6 @@ public class _05_Stream {
 		
 		langListStartsWithC.stream().forEach(System.out::println);
 		
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 		
 	}
 }

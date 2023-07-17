@@ -59,5 +59,18 @@ public class _05_For {
             System.out.println("현재까지의 총합은 " + sum + "입니다.");
         }
         System.out.println("1부터 10까지의 모든 정수의 총합은 " + sum + "입니다.");
-    }
+
+		for (int i = 0; i < 5; i++) {
+			if (true) {
+				for (int j = 0; j < 5; j++) {
+					System.out.println(i + "   " + j);
+					if (i == j) {
+						System.out.println("zz");
+						break;
+					}
+				}
+
+			}
+		}
+	}
 }

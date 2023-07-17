@@ -30,8 +30,8 @@ public class _01_AnonymousClass1 {
 		};
 		specialCoffee.order("¶ó¶¼");
 		specialCoffee.returnTray();
-
-	}
+		
+	}	
 }
 
 class Coffee {

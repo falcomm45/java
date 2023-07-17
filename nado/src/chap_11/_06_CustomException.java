@@ -22,6 +22,7 @@ public class _06_CustomException {
 
 class AgeLessThan19Exception extends Exception {
 	
+
 	public AgeLessThan19Exception(String message) {
 		super(message);
 		}

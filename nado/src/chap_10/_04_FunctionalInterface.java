@@ -8,10 +8,13 @@ import chap_10.converter.KRWConverter;
 
 public class _04_FunctionalInterface {
 	public static void main(String[] args) {
-		KRWConverter converter = new KRWConverter();
+		// KRWConverter converter = new KRWConverter();
 		// converter.convert(2);
 		// convertUSD(converter, 2);
 		// ==> convertUSD((USD) -> System.out.println(USD + "달러 = " + (USD * 1400) + "원"), 12);		
+		
+		convertUSD((USD) -> System.out.println(USD + "달러 = " + (USD * 1400) + "원")	, 2);
+		
 		
 		// 함수형 인터페이스
 		Convertible convertible = (USD) -> System.out.println(USD + "달러 = " + (USD * 1400) + "원");
@@ -42,6 +45,7 @@ public class _04_FunctionalInterface {
 		ConvertibleWithReturn c3 = (d, w) -> d*w;
 		int result = c3.convert(27, 1400);
 		System.out.println("27달러 : " + result + "원");
+		
 		
 	}
 	

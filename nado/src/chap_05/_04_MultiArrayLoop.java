@@ -1,5 +1,7 @@
 package chap_05;
 
+import java.util.Scanner;
+
 public class _04_MultiArrayLoop {
     public static void main(String[] args) {
         // 다차원 배열 순회
@@ -40,11 +42,11 @@ public class _04_MultiArrayLoop {
                 seats3 [i][j] = eng[i] + (j + 1);
             }
         }
-
+        
         // 표 구매
         seats3[7][8] = "__";
         seats3[7][9] = "___";
-
+        
         // 영화관 좌석 번호 확인
         for (int i = 0; i < seats3.length; i++) { // 세로
             for (int j = 0; j < seats3[i].length; j++) { // 가로
@@ -52,6 +54,7 @@ public class _04_MultiArrayLoop {
             }
             System.out.println();
         }
+        
     }
 }
 
